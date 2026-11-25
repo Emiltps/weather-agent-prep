@@ -19,7 +19,7 @@ def median(numbers: list[float]) -> float:
 
 
 # Dictionary is a data structure that stores information as a key-value pair
-def find_user(users: dict[str, int , str], name: str) -> int | None:
+def find_user(users: dict[str, int], name: str) -> int | None:
     return users.get(name)
 
 print(total([1.0, 2.5, 3.0]))
@@ -32,6 +32,6 @@ print(median([3.0, 2.5, 1.0 , 7]))
 print(average([1.0, 2.5, 3.0]))
 
 #print(average(["a", "b"]))          # wrong on purpose
-print(find_user({"john": 30 , "city"}, "john"))
+print(find_user({"john": 30 }, "john"))
 age = find_user({"john": 30}, "anna")
 print(age + 1)                       # wrong on purpose: age might be None
